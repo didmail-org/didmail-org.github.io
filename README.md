@@ -28,3 +28,18 @@ Domain verification proves ownership; it does not replace the site's Pages sourc
 Use accurate development-stage wording. Do not add download buttons, a public source link, production-readiness claims or audit claims until they are actually available. Keep both languages in sync when updating `index.html` and `app.js`.
 
 Original website code and text use Apache-2.0; see LICENSE and NOTICE. DIDMail branding remains subject to applicable trademark rights. Existing DIDMail logo assets are reused here for the project's own homepage. No registered-trademark claim is made.
+
+## Design and editorial direction
+
+The homepage uses only black, white and neutral grays, with editorial typography, fine rules and CSS illustrations of an NFT envelope and namecard. The illustrations are concepts, not screenshots of shipping products.
+
+Keep English and Chinese content aligned across these subjects:
+
+- Security: private-key identity and signed operations; passwords unlock protected wallet data locally. Avoid implying that keys or local passwords cannot be compromised, or that all traditional email lacks stronger authentication.
+- Architecture: encryption endpoints are the sender and recipient; selected service nodes relay and store ciphertext. Identity, service selection and on-chain evidence are separate from message plaintext. Decentralized does not imply server-free delivery or universal replication.
+- NFT envelopes and namecards: personal expression and contact exchange; envelope artwork does not itself provide encryption.
+- Enterprise use: Apache-2.0 software license fee is zero; infrastructure, operations, chain and paid service costs are separate.
+- Node operators: revenue depends on paid usage, protocol fee allocation and operating costs. Do not promise returns or present test tokens as cash income.
+- Technology: ArcBlock DID, ARC/AFS/AUP integration, Workers/D1/R2 and cross-client protocol work. Distinguish local verification from hosted deployment acceptance.
+
+Technology references: [ArcBlock DID specification](https://arcblock.github.io/abt-did-spec/), [ArcBlock AFS documentation](https://www.arcblock.io/en/docs/afs/), [Cloudflare Workers](https://developers.cloudflare.com/workers/). Project-specific architecture is checked against the DIDMail source and server documentation.
