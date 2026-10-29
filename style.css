@@ -298,3 +298,90 @@ html[lang=zh] .card-name { font-family: var(--sans); font-size: 25px; }
   html { scroll-behavior: auto; }
   *, *:before, *:after { transition: none !important; animation: none !important; }
 }
+/* A native selector keeps all five languages accessible by keyboard and touch. */
+.language-picker { position: relative; flex-shrink: 0; }
+.language-picker .language { appearance: none; border: 1px solid #444; border-radius: 2px; background: #151515; color: #eee; padding: 10px 28px 10px 12px; min-height: 40px; width: 108px; font-size: 12px; line-height: 1.3; cursor: pointer; }
+.language-picker>span { pointer-events: none; position: absolute; right: 10px; top: 10px; color: #aaa; }
+.language option { background: #151515; color: #eee; }
+.hero-copy, .section-intro, .principle-list, .nft-feature, .project-heading>div,
+.audience-row>div, .tech-list article>div, .status-inner>div, .release-note { min-width: 0; }
+h1, h2, h3, p, .fine-print, .technology-section>.fine-print { overflow-wrap: anywhere; }
+html[lang=ja] h1, html[lang=ja] h2, html[lang=ja] .message-paper p,
+html[lang=ja] .card-name { font-family: var(--sans); font-style: normal; }
+html[lang=ja] h1 { font-size: 43px; letter-spacing: -1.5px; line-height: 1.5; }
+html[lang=ja] h1 em { font-style: normal; }
+html[lang=ja] h2 { font-size: 35px; line-height: 1.5; letter-spacing: -1px; }
+html[lang=ja] .message-paper p { font-size: 27px; line-height: 1.5; }
+html[lang=ja] .card-name { font-size: 24px; }
+html[lang=ru] h1 { font-size: 57px; letter-spacing: -1.5px; line-height: 1.12; }
+html[lang=ru] h2 { font-size: 44px; }
+html[lang=ru] .message-paper p { font-size: 29px; }
+html[lang=ru] .card-name { font-size: 25px; }
+html[lang=ru] .tech-tag { font-size: 7px; letter-spacing: .1px; overflow-wrap: anywhere; }
+html[lang=ar] { --sans: Tahoma, Arial, sans-serif; }
+html[lang=ar] h1, html[lang=ar] h2, html[lang=ar] .message-paper p,
+html[lang=ar] .card-name { font-family: var(--sans); letter-spacing: 0; }
+html[lang=ar] h1 { font-size: 48px; line-height: 1.6; }
+html[lang=ar] h1 em { font-style: normal; }
+html[lang=ar] h2 { font-size: 37px; line-height: 1.6; }
+html[lang=ar] .eyebrow, html[lang=ar] .mono, html[lang=ar] .principles-strip .wrap { letter-spacing: 0; }
+html[lang=ar] .message-paper p { font-size: 26px; line-height: 1.7; }
+html[lang=ar] .card-name { font-size: 27px; }
+html[lang=ar] .hero-description, html[lang=ar] .principle-list p,
+html[lang=ar] .nft-feature>p, html[lang=ar] .audience-row p,
+html[lang=ar] .tech-list p, html[lang=ar] details p { line-height: 2; }
+html[dir=rtl] .journey-step { text-align: right; }
+html[dir=rtl] .connection span { right: auto; left: 0; transform: scaleX(-1); }
+html[dir=rtl] .release-note ul { padding-left: 0; padding-right: 15px; }
+html[dir=rtl] details p { margin: 0 0 23px 28px; }
+html[dir=rtl] .tech-list a, html[dir=rtl] .tech-tag { text-align: left; }
+html[dir=rtl] .mail-scene, html[dir=rtl] .envelope-study, html[dir=rtl] .namecard-study { direction: ltr; }
+html[dir=rtl] .message-paper p, html[dir=rtl] .scene-bottom [data-i18n],
+html[dir=rtl] .namecard [data-i18n] { direction: rtl; text-align: right; unicode-bidi: plaintext; }
+html[dir=rtl] .namecard [data-i18n] { display: block; }
+html[dir=rtl] .site-footer>div { align-items: start; }
+[data-i18n=didTechTitle], [data-i18n=arcTechTitle], [data-i18n=workerTechTitle], [data-i18n=stripArc] { direction: ltr; unicode-bidi: isolate; }
+@media(max-width:1100px) {
+  html[lang=ja] h1 { font-size: 36px; }
+  html[lang=ru] h1 { font-size: 47px; }
+  html[lang=ar] h1 { font-size: 42px; }
+}
+@media(max-width:800px) {
+  html[lang=ja] h1 { font-size: 42px; }
+  html[lang=ru] h1 { font-size: 60px; }
+  html[lang=ar] h1 { font-size: 49px; }
+  html[lang=ja] h2 { font-size: 32px; }
+  html[lang=ru] h2 { font-size: 39px; }
+  html[lang=ar] h2 { font-size: 34px; }
+}
+@media(max-width:760px) {
+  .site-header { position: relative; gap: 12px; }
+  .github-link { display: none; }
+  .menu-button { display: flex; flex-direction: column; justify-content: center; gap: 5px; border: 0; background: none; width: 28px; height: 40px; padding: 4px; cursor: pointer; }
+  .menu-button span { height: 1px; background: #ddd; width: 20px; }
+  .site-header nav { display: none; position: absolute; top: calc(100% - 1px); left: 0; right: 0; background: #151515; padding: 24px; border: 1px solid #444; z-index: 10; font-size: 14px; }
+  .site-header nav.open { display: flex; flex-direction: column; gap: 25px; }
+}
+@media(max-width:540px) {
+  .nav-actions { gap: 14px; }
+  .language-picker .language { width: 96px; font-size: 11px; padding-inline: 10px 24px; }
+  .site-header nav { left: -20px; right: -20px; padding-inline: 20px; }
+  html[lang=ja] h1 { font-size: 30px; letter-spacing: -.8px; }
+  html[lang=ja] h2 { font-size: 28px; }
+  html[lang=ru] h1 { font-size: 39px; letter-spacing: -1px; }
+  html[lang=ru] h2 { font-size: 34px; }
+  html[lang=ar] h1 { font-size: 34px; }
+  html[lang=ar] h2 { font-size: 30px; }
+  html[lang=ru] .message-paper p { font-size: 24px; }
+  html[lang=ru] .card-name { font-size: 23px; }
+  html[lang=ja] .message-paper p { font-size: 23px; }
+  html[lang=ar] .message-paper p { font-size: 23px; }
+  html[lang=ru] .scene-bottom { font-size: 9px; }
+  html[dir=rtl] .connection { margin-left: 0; margin-right: 6px; }
+  html[dir=rtl] .connection span { transform: rotate(90deg); left: -8px; }
+  html[dir=rtl] .tech-list article>a, html[dir=rtl] .tech-tag { text-align: right; }
+}
+@media(max-width:800px) {
+  /* Room for longer localized card names without covering the concept caption. */
+  .envelope-study, .namecard-study { height: 380px; }
+}
